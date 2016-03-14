@@ -1,23 +1,38 @@
+a, a:visited, a:hover {
+	color: inherit;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted #3258C1;
+}
+
 body {
 	font-family: 'Helvetica-neue', 'Helvetica', 'Arial', sans-serif;
 	color: #3258C1;
 }
 
-.title span {
-	font-weight: 100;
+.title {
+	margin-bottom: 50px;
 }
-
 
 header {
 	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 header p {
 	max-width: 500px;
 	line-height: 32px;
 	font-size: 22px;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header span {
+	color: #2982db;
+}
+
+.title span {
+	font-weight: 100;
+	color: inherit;
 }
 
 .container {
@@ -27,8 +42,12 @@ header p {
 	padding: 0px 20px 0px 20px;
 }
 
-.work--title h2{
-	font-weight: bold;
+.work--title {
+	flex: 1;
+}
+
+.work--title p, .work--type p {
+	margin-top: 10px;
 }
 
 .work--title span{
@@ -39,6 +58,12 @@ header p {
 	font-size: 13px;
 }
 
+.work--type {
+	font-weight: 100;
+	text-align: right;
+	flex: 1;
+}
+
 .work--type span {
 	font-weight: 100;
 	font-family: 'Inconsolata', monospace;
@@ -47,10 +72,17 @@ header p {
 	border-bottom: 2px solid #3258C1;
 }
 
-.work--type {
-	font-weight: 100;
-	text-align: right;
+.work--description {
+	width: 100%;
 }
+
+.work--description p {
+	font-weight: 100;
+	font-size: 13px;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
 
 article {
 	border-top: 1px dotted #3258C1;
@@ -58,7 +90,7 @@ article {
 	padding: 20px 0px 20px 0px;
 	margin-bottom: 10px;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 article div:last-child img {
@@ -97,23 +129,8 @@ ul li {
 	line-height: 26px;
 }
 
-.colofon {
-	font-size: 30px;
-}
-
-.colofon--title {
-	font-size: 30px;
-	font-weight: 100;
-	margin-top: 0px;
-}
-
-.abbr {
-	min-width: 60px;
-	display: inline-block;
-}
-
 footer {
-	margin-top: 80px;
+	margin-top: 60px;
 	background: rgba(150,150,150,0.1);
 	height: 300px;
 	z-index: -2;
@@ -125,23 +142,42 @@ footer {
 	padding: 20px;
 }
 
-.row {
-	display: flex;
+.colofon {
+	font-size: 30px;
 }
 
-@media (max-width: 700px) {
-	.row > .col:first-child, .col:nth-child(2) {
-		display: none;
-	}
+.colofon--title {
+	font-size: 28px;
+	font-weight: 100;
+	margin-top: 0px;
+}
+
+.col ul li {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.abbr {
+	min-width: 80px;
+	display: inline-block;
+}
+
+.row {
+	display: flex;
 }
 
 .col {
 	flex: 1;
 }
 
+@media (max-width: 700px) {
+	.row > .col:nth-child(2), .col:last-child {
+		display: none;
+	}
+}
+
 .copyright {
 	display: flex;
-	height: 50px;
 	align-items: center;
 	font-size: 13px;
 	font-weight: 100;
