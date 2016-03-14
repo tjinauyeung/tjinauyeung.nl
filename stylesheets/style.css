@@ -1,0 +1,87 @@
+h1 {
+	font-size: 72px;	
+}
+
+body {
+	font-family: arial;
+	opacity: 0;
+}
+
+.title {
+	position: fixed;
+	left: 40px;
+	top: 20px;
+}
+
+.btn-about {
+	position: fixed;
+	right: 40px;
+	top: 20px;
+}
+
+.btn-close {
+	position: fixed;
+	right: 40px;
+	top: 20px;
+}
+
+.modal {
+	background: yellow;
+	width: 400px;
+	height: 400px;
+}
+
+.aboutpage {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background: pink;
+	height: 100vh;
+	width: 100vw;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	height: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+}
+
+.col-50 {
+	width: 50vw;
+	height: 50vw;
+}
+
+.col-25 {
+	float: left;
+	width: 25vw;
+	height: 25vw;
+	background: blue;
+}
+
+.col-25 h2 {
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.col-25:hover {
+	background: white;
+}
+
+.col-25 h2:hover {
+	opacity: 1;
+}
+
+footer {
+	height: 220px;
+	background: #888;
+}

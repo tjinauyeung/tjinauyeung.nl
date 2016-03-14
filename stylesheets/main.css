@@ -1,0 +1,142 @@
+body {
+	font-family: 'Arial', 'Helvetica-neue', 'Helvetica', sans-serif;
+	color: #3258C1;
+}
+
+header {
+	margin-top: 60px;
+}
+
+header p {
+	max-width: 500px;
+	line-height: 32px;
+	font-size: 22px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+	z-index: 1;
+	padding: 0px 20px 0px 20px;
+}
+
+article {
+	border-top: 1px dotted #3258C1;
+	border-bottom: 1px dotted #3258C1;
+	padding: 20px 0px 20px 0px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.work--title h2{
+	font-weight: bold;
+}
+
+.work--title span{
+	font-weight: 100;
+	font-family: 'Inconsolata', monospace;
+	border-bottom: 2px solid #3258C1;
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+
+.work--description span {
+	font-weight: 100;
+	font-family: 'Inconsolata', monospace;
+	font-size: 13px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #3258C1;
+}
+
+.work--description {
+	font-weight: 100;
+	text-align: right;
+}
+
+article div:last-child img {
+	max-height: 80%;
+}
+
+article div:last-child {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	background: #DEE8ED;
+	align-items: center;
+	transition: 0.2s all ease-in-out;
+}
+
+article:hover div:last-child {
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.2s all ease-in-out;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	line-height: 26px;
+}
+
+.colofon {
+	font-size: 30px;
+}
+
+.colofon--title {
+	font-size: 30px;
+	font-weight: 100;
+	margin-top: 0px;
+}
+
+.abbr {
+	min-width: 60px;
+	display: inline-block;
+}
+
+footer {
+	margin-top: 80px;
+	background: rgba(150,150,150,0.1);
+	height: 300px;
+	z-index: -2;
+}
+
+.footer--container {
+	max-width: 1000px;
+	margin: auto;
+	padding-top: 20px;
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	flex: 1;
+}
+
+.copyright {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 100;
+	max-width: 1000px;
+	margin: auto;
+}
+
+
+
