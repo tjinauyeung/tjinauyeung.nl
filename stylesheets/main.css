@@ -1,7 +1,12 @@
 body {
-	font-family: 'Arial', 'Helvetica-neue', 'Helvetica', sans-serif;
+	font-family: 'Helvetica-neue', 'Helvetica', 'Arial', sans-serif;
 	color: #3258C1;
 }
+
+.title span {
+	font-weight: 100;
+}
+
 
 header {
 	margin-top: 60px;
@@ -22,15 +27,6 @@ header p {
 	padding: 0px 20px 0px 20px;
 }
 
-article {
-	border-top: 1px dotted #3258C1;
-	border-bottom: 1px dotted #3258C1;
-	padding: 20px 0px 20px 0px;
-	margin-bottom: 10px;
-	display: flex;
-	justify-content: space-between;
-}
-
 .work--title h2{
 	font-weight: bold;
 }
@@ -43,7 +39,7 @@ article {
 	font-size: 13px;
 }
 
-.work--description span {
+.work--type span {
 	font-weight: 100;
 	font-family: 'Inconsolata', monospace;
 	font-size: 13px;
@@ -51,9 +47,18 @@ article {
 	border-bottom: 2px solid #3258C1;
 }
 
-.work--description {
+.work--type {
 	font-weight: 100;
 	text-align: right;
+}
+
+article {
+	border-top: 1px dotted #3258C1;
+	border-bottom: 1px dotted #3258C1;
+	padding: 20px 0px 20px 0px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
 }
 
 article div:last-child img {
@@ -117,11 +122,17 @@ footer {
 .footer--container {
 	max-width: 1000px;
 	margin: auto;
-	padding-top: 20px;
+	padding: 20px;
 }
 
 .row {
 	display: flex;
+}
+
+@media (max-width: 700px) {
+	.row > .col:first-child, .col:nth-child(2) {
+		display: none;
+	}
 }
 
 .col {
@@ -136,6 +147,7 @@ footer {
 	font-weight: 100;
 	max-width: 1000px;
 	margin: auto;
+	padding: 20px;
 }
 
 
