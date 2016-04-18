@@ -131,7 +131,7 @@ article .work--image {
 	visibility: hidden;
 	display: flex;
 	justify-content: center;
-	background: #fff9ed;
+	background: #e7e7e7;
 	align-items: center;
 	transition: 0.3s all ease-in-out;
 	-webkit-transition: 0.3s all ease-in-out;
